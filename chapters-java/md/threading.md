@@ -958,7 +958,7 @@ The compiler enforces immutability when fields are `final`, making setters not j
 <details>
 <summary>What is `thread pool`?</summary>
 
-A thread pool is a tool in Java for creating, managing and reusing a fixed set of threads - reducing the overhead of creating and destroting a new thread every time task needs to be executed. Tasks are submitted to the pool and queued until a thread becomes available to execute them. In Java thread pools are managed to `ExecutorService` interface and create via `Executors` factory class. 
+A thread pool is a tool in Java for creating, managing and reusing a fixed set of threads - reducing the overhead of creating and destroting a new thread every time a task needs to be executed. Tasks are submitted to the pool and queued until a thread becomes available to execute them. In Java thread pools are managed to `ExecutorService` interface and create via `Executors` factory class. 
 
 ```java
 // Creating a thread pool

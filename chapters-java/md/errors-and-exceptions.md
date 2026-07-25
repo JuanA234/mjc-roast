@@ -3,20 +3,18 @@
 <details>
 <summary>What is an `Exception`?</summary>
 
-An exception is an unexpected condition or event that occurs at runtime and disrupts the normal flow of the program. If left unhandled it causes the program to stop, but it can be caught with a `try-catch` block allowing the program to revcover and continue. Exceptions are represented as objects in Java - every exception is an instance of a class that extends `Throwable`.
+An exception is an unexpected condition or event that occurs at runtime and disrupts the normal flow of the program. If left unhandled it causes the program to stop, but it can be caught with a `try-catch` block allowing the program to recover and continue. Exceptions are represented as objects in Java - every exception is an instance of a class that extends `Throwable`.
 
 </details>
 
 <details>
 <summary>What are some advantages of exceptions</summary>
 
-* They give you control over unexpected runtime conditinos by allowing you to handle or recover from them gracefully.
+* They give you control over unexpected runtime conditions by allowing you to handle or recover from them gracefully.
 
 * Custom exceptions let you know specifically why your application is failing
 
-* They give you control over unexpected runtime conditions by allowing you to handle or recover from them gracefully.
-
-* They separate error handling logic from normal program flow keeping the code cleaner and more redeable.
+* They separate error handling logic from normal program flow keeping the code cleaner and more readable.
 
 * They propagate automatically up the call stack, meaning that you handle the error at the level where it actually makes sense, not necessarily where it occured.
 
@@ -166,7 +164,7 @@ They represent External failures (IO, DB). Examples: `IOException`, `SQLExceptio
 <details>
 <summary>What are `unchecked exceptions`?</summary>
 
-Are those that handling them is optional, you could handle them with a `try-catch` block. They extend from a `RuntimeException`.
+Are those that handling them is optional, you could handle them with a `try-catch` block. They extend from `RuntimeException`.
 
 They represent Programming mistakes. Examples: `NullPointerException`, `IllegalArgumentException`, `ArrayIndexOutOfBoundsException`. Conditions that shouldn't occur if the code is written correctly.
 
@@ -200,7 +198,7 @@ An error is an unexpected condition that you should not try to handle or recover
 <details>
 <summary>What is the difference between an exception and error?</summary>
 
-Both exceptions and errors are runtime conditions that disrupt normal program flow, but they differn in what causes them and whether you should handle them.
+Both exceptions and errors are runtime conditions that disrupt normal program flow, but they differ in what causes them and whether you should handle them.
 
 `Exceptions` represent conditions that can be anticipated and recovered from - either external conditions like a missing file (checked), or programming mistakes (unchecked). `Errors` represent severe JVM level failures like running out of memory (`OutOfMemoryError`) or infinite recursion exhausting the stack (`StackOverFlowError`) - conditions so serious that recovery is not possible or meaningful and you should not try to handle them.
 

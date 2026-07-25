@@ -618,12 +618,12 @@ Within the bucket it uses `equals()` to find the exact entry. As long as keys ar
 <details>
 <summary>What is the difference between HashMap and LinkedHashMap?</summary>
 
-The main difference is that `LinkedHashMap` preserves the order of insertion while `HashMap` makes no ordering guarantees. `LinkedHashMap` achieves this by maintaining a doubly linked list running through all its entries in addition to the hash table structure - so iteration always returns entries in the order they were inserted. This comes witha slight memory and performance overhead compared to `HashMap`.
+The main difference is that `LinkedHashMap` preserves the order of insertion while `HashMap` makes no ordering guarantees. `LinkedHashMap` achieves this by maintaining a doubly linked list running through all its entries in addition to the hash table structure - so iteration always returns entries in the order they were inserted. This comes with a slight memory and performance overhead compared to `HashMap`.
 
 </details>
 
 <details>
-<summary>If insertion order is to be maintained, which one would you use: LinkedHashMap or HashSet ? Why?</summary>
+<summary>If insertion order is to be maintained, which one would you use: LinkedHashMap or HashMap? Why?</summary>
 
 `LinkedHashMap` because it works with a doubly linked list in addition to the hash table structure - so iteration always returns entries in the order they were inserted.
 
