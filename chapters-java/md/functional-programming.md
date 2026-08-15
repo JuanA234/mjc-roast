@@ -112,7 +112,7 @@ names.stream()
 </details>
 
 <details>
-<summary></summary>
+<summary>What is the difference between normal and functional interfaces</summary>
 
 The main difference is that functional interfaces declare exactly one abstract method, while normal interfaces can declare as many as needed. This single method constraint is what allows functional interfaces to be implemented as lambda expressions- normal interfaces cannot. Functional interfaces can also be annoted with `@FunctionalInterface` which enforces the contract at compile time. Additionally functional interfaces can only extend another interface if the total number of abstract methods across the hierarchy remains exactly one.
 
